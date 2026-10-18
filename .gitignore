@@ -1,0 +1,27 @@
+__pycache__/
+*.py[cod]
+*.db
+*.sqlite
+*.sqlite3
+
+# Virtual environments
+.venv/
+venv/
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Node dependencies and build output
+node_modules/
+frontend/dist/
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs and backups
+*.log
+*.bak
