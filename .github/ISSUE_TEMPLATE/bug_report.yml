@@ -1,0 +1,44 @@
+name: Bug report
+description: Report a reproducible problem in ScopeGuard AI
+title: "bug: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "Please use fictional or sanitised scope text. Do not submit real client agreements, private data, or secrets."
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: A concise description of the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. Create a project...\n2. Enter a fictional request...\n3. Run analysis..."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Ollama model and version
+      placeholder: "gemma3:4b"
+  - type: input
+    id: environment
+    attributes:
+      label: OS and runtime versions
+      placeholder: "Windows 11, Python 3.12, Node 20"
